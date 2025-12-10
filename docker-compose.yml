@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgres:16
+    container_name: appointment-db
+    environment:
+      POSTGRES_USER: promo
+      POSTGRES_PASSWORD: promopass
+      POSTGRES_DB: promodb
+    ports:
+      - "5432:5432"       # Exposes Postgres to host
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      
+  migrate:
+    build:
+      context: ./Appointment-Booking-System/appointment-service
+      dockerfile: Dockerfile
+    container_name: appointment-migrate
+    command: ["dotnet", "appointment-service.dll", "-m"]
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Database__ConnectionString: "Host=db;Port=5432;Database=promodb;Username=promo;Password=promopass;"
+    volumes:
+        - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
+ 
+    depends_on:
+      - db
+
+  api:
+    build:
+      context: ./Appointment-Booking-System/appointment-service
+      dockerfile: Dockerfile
+    container_name: appointment-api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Database__ConnectionString: "Host=db;Port=5432;Database=promodb;Username=promo;Password=promopass;"
+    volumes:
+        - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
+    depends_on:
+      - db
+      - migrate
+    ports:
+      - "5000:8080" 
+
+  frontend:
+    build:
+      context: ./Appointment-Booking-System/appointment-scheduler
+      dockerfile: Dockerfile
+    container_name: appointment-frontend
+    environment:
+      - VITE_API_BASE=/api
+      - VITE_TOKEN_ENDPOINT=/api/auth/frontend-token
+    ports:
+      - "5173:80" 
+    depends_on:
+      - api
+
+volumes:
+  db-data:

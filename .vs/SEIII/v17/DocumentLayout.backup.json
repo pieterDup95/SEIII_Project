@@ -1,0 +1,806 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CP375007\\source\\repos\\SEIII\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\configuration\\databaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\configuration\\databaseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\availabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\availabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\migrations\\20251202081913_addseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\migrations\\20251202081913_addseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\seed\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\seed\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\branchdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\branchdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\branchdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\branchdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\branchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\branchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\entities\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\entities\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\entities\\appointmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\entities\\appointmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\appointmentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\appointmentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\designtimeapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\designtimeapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\appointment-service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\appointment-service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\applicationdbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\applicationdbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\entities\\customerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\entities\\customerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\entities\\operationalhours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\entities\\operationalhours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\sqsnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\sqsnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\managementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\managementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\createappointmentsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\createappointmentsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\branchdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\branchdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\operationalhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\operationalhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\ibranchdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\ibranchdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\ibranchdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\ibranchdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\managementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\managementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\createbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\createbranchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\models\\createoperationalhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\models\\createoperationalhoursdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\persistence\\repositories\\imanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\persistence\\repositories\\imanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\service\\imanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\service\\imanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|c:\\users\\cp375007\\source\\repos\\seiii\\appointment-service\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0297F5-47D6-4C9D-817A-056D318C7FFF}|appointment-service\\appointment-service.csproj|solutionrelative:appointment-service\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AvailabilityController.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\AvailabilityController.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\AvailabilityController.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\AvailabilityController.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\AvailabilityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T11:35:25.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20251202081913_AddSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Migrations\\20251202081913_AddSeedData.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Migrations\\20251202081913_AddSeedData.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Migrations\\20251202081913_AddSeedData.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Migrations\\20251202081913_AddSeedData.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAgwIwAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:46:29.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\Branch.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Entities\\Branch.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\Branch.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Entities\\Branch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:22:08.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Seed\\SeedData.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Seed\\SeedData.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Seed\\SeedData.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Seed\\SeedData.cs",
+              "ViewState": "AgIAAGIBAAAAAAAAAAASwHEBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:04:08.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Configuration\\DatabaseConfiguration.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Configuration\\DatabaseConfiguration.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Configuration\\DatabaseConfiguration.cs",
+              "RelativeToolTip": "appointment-service\\Configuration\\DatabaseConfiguration.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA6wDEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:11:22.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BranchDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\BranchDetailRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\BranchDetailRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\BranchDetailRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\BranchDetailRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:14:34.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BranchDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\BranchDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\BranchDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\BranchDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\BranchDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:35:34.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appointment-service\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appsettings.Development.json",
+              "RelativeToolTip": "appointment-service\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T06:59:13.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Program.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Program.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Program.cs",
+              "RelativeToolTip": "appointment-service\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:00:06.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BranchDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\BranchDetailService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\BranchDetailService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\BranchDetailService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\BranchDetailService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAnwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:14:58.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:10:32.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\AppointmentService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:09:49.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T11:52:20.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:18:03.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppointmentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\AppointmentResponse.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\AppointmentResponse.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\AppointmentResponse.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\AppointmentResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:27:13.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppointmentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\AppointmentRequest.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Entities\\AppointmentRequest.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\AppointmentRequest.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Entities\\AppointmentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T11:09:11.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContextInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\ApplicationDbContextInitializer.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\ApplicationDbContextInitializer.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\ApplicationDbContextInitializer.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\ApplicationDbContextInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T08:42:37.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appointment-service.csproj",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appointment-service.csproj",
+              "RelativeDocumentMoniker": "appointment-service\\appointment-service.csproj",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appointment-service.csproj",
+              "RelativeToolTip": "appointment-service\\appointment-service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T07:59:48.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DesignTimeApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\DesignTimeApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\DesignTimeApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\DesignTimeApplicationDbContext.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\DesignTimeApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:03:27.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OperationalHours.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\OperationalHours.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Entities\\OperationalHours.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\OperationalHours.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Entities\\OperationalHours.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:25:42.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerInfo.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\CustomerInfo.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Entities\\CustomerInfo.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Entities\\CustomerInfo.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Entities\\CustomerInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T11:09:58.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ManagementService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\ManagementService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\ManagementService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\ManagementService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\ManagementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:41:15.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SqsNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\SqsNotificationService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\SqsNotificationService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\SqsNotificationService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\SqsNotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:10:29.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\EmailService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\EmailService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:28:17.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\INotificationService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\INotificationService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:10:05.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IEmailService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IEmailService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T16:28:01.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "appointment-service\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Properties\\launchSettings.json",
+              "RelativeToolTip": "appointment-service\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T09:07:33.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateAppointmentsDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateAppointmentsDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\CreateAppointmentsDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateAppointmentsDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\CreateAppointmentsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T13:10:37.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appsettings.json",
+              "RelativeDocumentMoniker": "appointment-service\\appsettings.json",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\appsettings.json",
+              "RelativeToolTip": "appointment-service\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T06:59:11.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IAppointmentRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:10:21.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BranchDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\BranchDetailController.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\BranchDetailController.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\BranchDetailController.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\BranchDetailController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:15:11.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IAppointmentService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:09:59.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\CustomerDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CustomerDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\CustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:30:29.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OperationalHoursDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\OperationalHoursDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\OperationalHoursDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\OperationalHoursDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\OperationalHoursDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:07:44.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IBranchDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IBranchDetailRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\IBranchDetailRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IBranchDetailRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\IBranchDetailRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:14:25.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IBranchDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IBranchDetailService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\IBranchDetailService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IBranchDetailService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\IBranchDetailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T07:14:52.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\ManagementRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\ManagementRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\ManagementRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\ManagementRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwBEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:47:07.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CreateBranchDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateBranchDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\CreateBranchDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateBranchDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\CreateBranchDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:17:55.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\ManagementController.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\ManagementController.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\ManagementController.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\ManagementController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAABQwB0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:33:05.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateOperationalHoursDto.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateOperationalHoursDto.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\Models\\CreateOperationalHoursDto.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\Models\\CreateOperationalHoursDto.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\Models\\CreateOperationalHoursDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:41:24.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\IApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\IApplicationDbContext.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\IApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:18:17.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IManagementRepository.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Persistence\\Repositories\\IManagementRepository.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Persistence\\Repositories\\IManagementRepository.cs",
+              "RelativeToolTip": "appointment-service\\Persistence\\Repositories\\IManagementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:46:58.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IManagementService.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IManagementService.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Service\\IManagementService.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Service\\IManagementService.cs",
+              "RelativeToolTip": "appointment-service\\Service\\IManagementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T06:42:15.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "appointment-service\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\CP375007\\source\\repos\\SEIII\\appointment-service\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "appointment-service\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:48:05.163Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
