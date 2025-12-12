@@ -3,13 +3,18 @@ services:
     image: postgres:16
     container_name: appointment-db
     environment:
-      POSTGRES_USER: promo
-      POSTGRES_PASSWORD: promopass
-      POSTGRES_DB: promodb
+      POSTGRES_USER: ${POSTGRES_USER:-promo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-promopass}
+      POSTGRES_DB: ${POSTGRES_DB:-promodb}
     ports:
-      - "5432:5432"       # Exposes Postgres to host
+      - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
       
   migrate:
     build:
@@ -18,13 +23,13 @@ services:
     container_name: appointment-migrate
     command: ["dotnet", "appointment-service.dll", "-m"]
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      Database__ConnectionString: "Host=db;Port=5432;Database=promodb;Username=promo;Password=promopass;"
+      Database__ConnectionString: "Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
     volumes:
         - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
  
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   api:
     build:
@@ -33,7 +38,7 @@ services:
     container_name: appointment-api
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      Database__ConnectionString: "Host=db;Port=5432;Database=promodb;Username=promo;Password=promopass;"
+      Database__ConnectionString: "Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
     volumes:
         - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
     depends_on:

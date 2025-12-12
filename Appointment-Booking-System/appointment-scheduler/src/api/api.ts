@@ -27,7 +27,6 @@ const getToken = async (): Promise<string> => {
   if (cachedToken && cachedToken.expiresAt > Date.now() + 30_000) {
     return cachedToken.token;
   }
-alert(`${API_BASE}${TOKEN_ENDPOINT}`);
   const response = await fetch(`${API_BASE}${TOKEN_ENDPOINT}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
