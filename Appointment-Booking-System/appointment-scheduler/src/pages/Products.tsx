@@ -1,4 +1,3 @@
-// src/pages/Products.tsx
 import { Link } from "react-router-dom";
 import { TrendingUp, Home, PiggyBank, CreditCard, ArrowRight, Check } from "lucide-react";
 

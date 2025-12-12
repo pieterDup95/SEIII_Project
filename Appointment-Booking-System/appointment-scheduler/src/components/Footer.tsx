@@ -1,6 +1,5 @@
-// src/components/Footer.tsx
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, Shield, Award } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram, Shield } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -62,10 +61,6 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-sm">
                 <Shield className="w-5 h-5 text-yellow-400" />
                 <span>Authorised Financial Services Provider</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Award className="w-5 h-5 text-yellow-400" />
-                <span>Best Digital Bank SA 2024</span>
               </div>
               <div className="flex gap-4 mt-6">
                 <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition">

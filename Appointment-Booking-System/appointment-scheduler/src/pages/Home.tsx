@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { Link } from "react-router-dom";
 import {
   CreditCard,
@@ -9,7 +8,6 @@ import {
   Shield,
   Clock,
   Users,
-  Award,
   HeadphonesIcon,
   Globe,
   CheckCircle2,
@@ -54,7 +52,6 @@ const features = [
   { title: "24/7 Local Support", description: "Real South African experts, anytime you need us.", icon: HeadphonesIcon },
   { title: "Instant Approvals", description: "Many loans approved and paid out within hours.", icon: Clock },
   { title: "500,000+ Customers", description: "Trusted nationwide from Cape Town to Polokwane.", icon: Users },
-  { title: "Award-Winning Bank", description: "Best Digital Bank SA 2024 – Finance Weekly Awards.", icon: Award },
   { title: "20 Branches", description: "Bank online or visit us — the choice is yours.", icon: Globe },
 ];
 

@@ -1,4 +1,3 @@
-// src/pages/About.tsx
 import { Users, Shield, Target, Heart, TrendingUp, Globe } from "lucide-react";
 
 export default function About() {
@@ -46,7 +45,7 @@ export default function About() {
             </div>
             <div className="space-y-6">
               <p className="text-2xl font-bold text-blue-700">Today – Nationwide Leader</p>
-              <p>500,000+ customers · 20 branches · R15 billion+ in assets · Still 100% South African owned</p>
+              <p>500,000+ customers · 20 branches ·  Still 100% South African owned</p>
             </div>
           </div>
           <p className="mt-16 text-2xl md:text-3xl font-bold text-center text-blue-800 max-w-4xl mx-auto">

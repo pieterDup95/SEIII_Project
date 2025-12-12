@@ -1,4 +1,3 @@
-// src/components/DuplicateBookingModal.tsx
 import { X, AlertCircle } from "lucide-react";
 
 

@@ -1,4 +1,3 @@
-// src/pages/ProductDetail.tsx
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, Check,  Shield } from "lucide-react";
 

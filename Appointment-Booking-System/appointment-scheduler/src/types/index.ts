@@ -1,5 +1,3 @@
-// src/types/index.ts
-
 export interface OperationalHour {
   dayOfWeek: number;        // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
   openTime: string;         // "08:00:00"
