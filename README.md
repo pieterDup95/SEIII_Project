@@ -12,11 +12,13 @@ This repository contains a full-stack Appointment Booking System, consisting of 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Environment Variables](#environment-variables)
-  - [Running with Docker Compose](#running-with-docker-compose)
-  - [Manual Setup](#manual-setup)
+  - [Running the Application (Recommended)](#running-the-application-recommended)
+  - [Manual Local Development (Optional)](#manual-local-development-optional)
+- [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Development Setup](#development-setup)
 - [Production Setup](#production-setup)
+  
 
 ---
 
