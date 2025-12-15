@@ -1,4 +1,4 @@
-
+import React from "react";
 import { CheckCircle, MapPin, Calendar, Clock, X } from "lucide-react";
 import { format } from "date-fns";
 import type { AppointmentResponse, Branch } from "../types";

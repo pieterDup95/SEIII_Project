@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { Banknote, Home, Package, Users, Calendar, Menu, X } from "lucide-react";
 import { useState } from "react";

@@ -13,8 +13,13 @@ public static class NotificationConfiguration
         var sqsSettings = builder.Configuration.GetSection("AWSSqs").Get<AWSSqsSettings>()
             ?? throw new InvalidOperationException("AWSSqs missing");
 
+
+        var frontendSettings = builder.Configuration.GetSection("Frontend").Get<FrontendSettings>()
+            ?? throw new InvalidOperationException("Frontend settings missing");
+
         builder.Services.AddSingleton(emailSettings);
         builder.Services.AddSingleton(sqsSettings);
+        builder.Services.AddSingleton(frontendSettings);
 
         return builder;
     }

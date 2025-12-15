@@ -1,3 +1,4 @@
+import React from 'react';
 import type { TimeSlot } from "../types";  
 interface Props {
   slot: TimeSlot;

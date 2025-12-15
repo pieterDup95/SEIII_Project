@@ -1,3 +1,4 @@
+import React from 'react';
 import { MapPin, Phone } from "lucide-react";
 import type { Branch } from "../types";
 

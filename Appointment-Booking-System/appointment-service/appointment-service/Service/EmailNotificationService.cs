@@ -1,6 +1,7 @@
 ﻿using appointment_service.Models;
 using appointment_service.Service.Events;
 using appointment_service.Service.Interfaces;
+using appointment_service.Service.Models;
 using Microsoft.Extensions.Options;
 using Org.BouncyCastle.Asn1.Ocsp;
 using SendGrid;
@@ -12,15 +13,17 @@ namespace appointment_service.Service
     public class EmailNotificationService : INotificationService
     {
         private readonly EmailSettings _emailSettings;
-        public EmailNotificationService(EmailSettings emailSettings)
+        private readonly FrontendSettings _frontendSettings;
+        public EmailNotificationService(EmailSettings emailSettings, FrontendSettings frontendSettings)
         {
             _emailSettings = emailSettings;
+            _frontendSettings = frontendSettings;
         }
 
         public async Task SendAppointmentCreatedAsync(AppointmentCreatedEvent evt)
         {
             var client = new SendGridClient(_emailSettings.SendGridApiKey);
-            var cancelUrl = $"http://localhost:5173/Appointments/cancel/{evt.AppointmentRef}";
+            var cancelUrl = $"{_frontendSettings.BaseUrl}/Appointments/cancel/{evt.AppointmentRef}";
 
             var msg = new SendGridMessage()
             {
