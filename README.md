@@ -16,8 +16,6 @@ This repository contains a full-stack Appointment Booking System, consisting of 
   - [Manual Setup](#manual-setup)
 - [Project Structure](#project-structure)
 - [Development](#development)
-- [Testing](#testing)
-- [License](#license)
 
 ---
 
@@ -60,11 +58,11 @@ The Docker Compose setup includes:
 
 Create a `.env` file in the root directory (next to `docker-compose.yml`) with the following:
 
-
+```env
 POSTGRES_USER=your_postgres_user
 POSTGRES_PASSWORD=your_secure_password
 POSTGRES_DB=appointment_db
-
+```
 These variables are used by the PostgreSQL container and propagated to the migration/backend services.
 
 
@@ -75,12 +73,12 @@ Recommended for full-stack development and production-like setup.
 ```bash
 git clone <repo-url>
 cd Appointment-Booking-System
-
+```
 2. Create the .env file as described above.
 3. Start all services:
 ```bash
-shdocker-compose up --build
-
+docker-compose up --build
+```
 Docker Compose will:
 - Start the PostgreSQL database (db)
 - Wait for the database to be healthy
@@ -96,8 +94,11 @@ To stop: docker-compose down (add --volumes to remove persistent database data).
 ### Manual Setup
 ## Frontend (appointment-scheduler)
 
-Install dependencies:shcd Appointment-Booking-System/appointment-scheduler
+Install dependencies:
+```bash
+cd Appointment-Booking-System/appointment-scheduler
 npm install
+```
 Start the development server:`npm run dev`
 
 ## Backend (appointment-service)
@@ -107,7 +108,8 @@ Apply migrations manually (if needed):
 ```bash
 cd Appointment-Booking-System/appointment-service/appointment-service
 dotnet ef database update
-Build and run:shdotnet run
+```
+Build and run: `dotnet run`
 
 
 ### Project Structure
