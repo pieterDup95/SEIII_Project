@@ -115,8 +115,26 @@ dotnet ef database update
 ```
 Build and run: `dotnet run`
 
+## Testing
+### Frontend Tests
 
-### Project Structure
+The frontend uses **Vitest** and **React Testing Library** for fast, reliable component and interaction testing.
+
+To run the tests:
+
+```sh
+cd Appointment-Booking-System/appointment-scheduler
+npm run test
+```
+
+
+### Backend Tests
+```sh
+cd Appointment-Booking-System/appointment-service/appointment-service.Tests
+dotnet test
+```
+
+## Project Structure
 ```bash
 Appointment-Booking-System/
 ├── appointment-scheduler/         # Frontend (React)
