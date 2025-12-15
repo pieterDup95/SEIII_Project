@@ -10,7 +10,9 @@
         public string Suburb { get; set; }
         public string Address { get; set; }
         public string ContactNumber { get; set; }
-        public int SlotPerHour { get; set; }
+        public int SlotDuration { get; set; }
+        public int AppointmentsPerSlot { get; set; }
         public List<OperationalHoursDto>? OperationalHours { get; set; }
+        public List<string> PublicHolidays { get; set; }
     }
 }

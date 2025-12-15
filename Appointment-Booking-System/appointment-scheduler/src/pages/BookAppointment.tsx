@@ -137,11 +137,23 @@ export default function BookAppointment() {
     }
   };
 
-  const getOpenDays = (): number[] => {
-    return selectedBranch?.operationalHours.map((h) => h.dayOfWeek) || [1, 2, 3, 4, 5];
+  
+  const isPublicHoliday = (d: Date): boolean => {
+    if (!selectedBranch?.publicHolidays) return false;
+    const dateStr = format(d, "yyyy-MM-dd");
+    return selectedBranch.publicHolidays.includes(dateStr);
   };
 
-  const isDayDisabled = (d: Date) => !getOpenDays().includes(d.getDay());
+  const getOpenDays = (): number[] => {
+    return selectedBranch?.operationalHours.map(h => h.dayOfWeek) || [];
+  };
+
+  const isDayDisabled = (d: Date) => {
+    const isClosedDay = !getOpenDays().includes(d.getDay());
+    const isHoliday = isPublicHoliday(d);
+
+    return isClosedDay || isHoliday;
+  };
 
   const goBack = () => {
     if (activeTab === "datetime") setActiveTab("branch");
@@ -304,6 +316,10 @@ export default function BookAppointment() {
 
               {date && (
                 <div>
+
+                  <p className="text-center text-gray-600 mb-4">
+                    Each time slot represents a {selectedBranch.slotDuration} minute appointment.
+                  </p>
                   <h3 className="text-xl font-bold text-center mb-6 flex items-center justify-center gap-2">
                     <Clock /> Available Time Slots
                   </h3>

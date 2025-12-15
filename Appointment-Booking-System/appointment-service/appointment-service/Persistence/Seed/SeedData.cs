@@ -10,7 +10,8 @@ namespace appointment_service.Persistence.Seed
         {
             SeedBranches(modelBuilder);
             SeedOperationalHours(modelBuilder);
-            SeedAppointments(modelBuilder);
+            SeedAppointments(modelBuilder); 
+            SeedBranchHolidays(modelBuilder);
         }
 
 
@@ -29,7 +30,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Sandton",
                         Address = "Corner Rivonia Road & 5th Street, Sandton City",
                         ContactNumber = "011 783 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -41,7 +43,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Rosebank",
                         Address = "50 Bath Avenue, Rosebank",
                         ContactNumber = "011 447 8900",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -53,7 +56,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Melrose",
                         Address = "30 Melrose Boulevard, Melrose Arch",
                         ContactNumber = "011 684 1234",
-                        SlotPerHour = 6
+                        AppointmentsPerSlot = 6,
+                        SlotDuration = 30
                     },
                     new Branch
                     {
@@ -65,7 +69,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Fourways",
                         Address = "William Nicol Drive & Fourways Boulevard",
                         ContactNumber = "011 465 5678",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
 
                     // Pretoria
@@ -79,7 +84,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Menlyn",
                         Address = "Cnr Atterbury Road & Lois Avenue, Menlyn",
                         ContactNumber = "012 471 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -91,7 +97,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Brooklyn",
                         Address = "333 Veale Street, Nieuw Muckleneuk",
                         ContactNumber = "012 346 7890",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 30
                     },
 
                     // Cape Town
@@ -105,7 +112,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "V&A Waterfront",
                         Address = "Shop 6170, Victoria Wharf, V&A Waterfront",
                         ContactNumber = "021 418 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 30
                     },
                     new Branch
                     {
@@ -117,7 +125,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Century City",
                         Address = "Century Boulevard, Century City",
                         ContactNumber = "021 555 5678",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -129,7 +138,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Claremont",
                         Address = "Main Road & Cavendish Street, Claremont",
                         ContactNumber = "021 671 2345",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
 
                     // Durban & KZN
@@ -143,7 +153,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Umhlanga",
                         Address = "1 Palm Boulevard, Umhlanga Ridge",
                         ContactNumber = "031 566 8900",
-                        SlotPerHour = 7
+                        AppointmentsPerSlot = 7,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -155,7 +166,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Westville",
                         Address = "Jack Martens Drive, Westville",
                         ContactNumber = "031 275 1234",
-                        SlotPerHour = 6
+                        AppointmentsPerSlot = 6,
+                        SlotDuration = 30
                     },
                     new Branch
                     {
@@ -167,10 +179,10 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Berea",
                         Address = "115 Musgrave Road, Berea",
                         ContactNumber = "031 201 5678",
-                        SlotPerHour = 5
+                        AppointmentsPerSlot = 5,
+                        SlotDuration = 60
                     },
-
-                    // More cities
+                     
                     new Branch
                     {
                         Id = Guid.Parse("9A3BFEFA-1E48-452B-A533-CE951FCC1DE3"),
@@ -181,7 +193,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Brooklyn",
                         Address = "333 Veale Street, Brooklyn",
                         ContactNumber = "012 346 7890",
-                        SlotPerHour = 6
+                        AppointmentsPerSlot = 6,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -193,7 +206,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Edenvale",
                         Address = "Cnr Modderfontein & Van Riebeeck Roads, Greenstone",
                         ContactNumber = "011 452 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 30
                     },
                     new Branch
                     {
@@ -205,7 +219,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Bellville",
                         Address = "Willie van Schoor Avenue, Bellville",
                         ContactNumber = "021 914 5678",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 30
                     },
                     new Branch
                     {
@@ -217,7 +232,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Ballito",
                         Address = "Leonora Drive, Ballito",
                         ContactNumber = "032 946 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -229,7 +245,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Bedfordview",
                         Address = "43 Bradford Road, Bedfordview",
                         ContactNumber = "011 616 5678",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -241,7 +258,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Somerset West",
                         Address = "Cnr R44 & N2, Somerset West",
                         ContactNumber = "021 852 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -253,7 +271,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Randburg",
                         Address = "Beyers Naudé Drive, Cresta",
                         ContactNumber = "011 478 5678",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 60
                     },
                     new Branch
                     {
@@ -265,7 +284,8 @@ namespace appointment_service.Persistence.Seed
                         Suburb = "Westville",
                         Address = "Jack Martens Drive, Dawncliffe",
                         ContactNumber = "031 275 1234",
-                        SlotPerHour = 1
+                        AppointmentsPerSlot = 1,
+                        SlotDuration = 30
                     }
                 };
 
@@ -454,6 +474,79 @@ namespace appointment_service.Persistence.Seed
 
             modelBuilder.Entity<AppointmentRequest>().HasData(appointments);
             modelBuilder.Entity<AppointmentRequest>().OwnsOne(a => a.Customer).HasData(customerSeeds);
+        }
+
+        private static void SeedBranchHolidays(ModelBuilder modelBuilder)
+        {
+            var branchIds = new[]
+            {
+        Guid.Parse("412AC93A-41FC-48C5-B25E-B417AC02AE63"), 
+        Guid.Parse("2786BF11-426A-4450-83E3-F0356C929273"),
+        Guid.Parse("57FE6395-7C23-4BE9-8B3D-1005FD926294"),
+        Guid.Parse("D06615A6-7891-4D5C-A8DC-948F726EDEC5"),
+        Guid.Parse("D32218CD-95A2-4094-84BE-39EB5B24059A"),
+        Guid.Parse("DAC2973A-3B47-47CA-A265-8F5D15D1F431"),
+        Guid.Parse("314111AB-E47A-4FB1-A226-15F72A83938A"),
+        Guid.Parse("C646B3FA-0988-447A-8E41-A967C75BA2F4"),
+        Guid.Parse("DD1DE060-C2E3-42F6-B674-BD0C287564F2"),
+        Guid.Parse("E003B6CF-613D-4E2C-B1E5-ED3F5E5CE837"),
+        Guid.Parse("DC547B0E-FB2A-4CB6-BD25-4C5B5D031E17"),
+        Guid.Parse("5510587C-CDA4-400B-92DF-00940212C02D"),
+        Guid.Parse("9A3BFEFA-1E48-452B-A533-CE951FCC1DE3"),
+        Guid.Parse("1A20290C-735D-40F9-A18F-AAA203F19760"),
+        Guid.Parse("1705DF44-CBD6-4274-BA29-FB56DAD3C6E1"),
+        Guid.Parse("957F0253-00E8-4F8D-B713-A7EB2A0ACD5A"),
+        Guid.Parse("5215F0B1-95B7-445B-B675-CAB95ABB7132"),
+        Guid.Parse("0D819742-CD02-467C-9116-210BAF093806"),
+        Guid.Parse("ED6978B7-E183-4888-A270-6C5A70CC6038"),
+        Guid.Parse("C9878535-5B11-491A-B234-5815CC5F4BFC"),
+    };
+
+            var holidays = new[]
+            {
+        new { Date = new DateOnly(2025, 1, 1),  Name = "New Year's Day" },
+        new { Date = new DateOnly(2025, 3, 21), Name = "Human Rights Day" },
+        new { Date = new DateOnly(2025, 4, 18), Name = "Good Friday" },
+        new { Date = new DateOnly(2025, 4, 21), Name = "Family Day" },
+        new { Date = new DateOnly(2025, 4, 27), Name = "Freedom Day" },
+        new { Date = new DateOnly(2025, 5, 1),  Name = "Workers' Day" },
+        new { Date = new DateOnly(2025, 6, 16), Name = "Youth Day" },
+        new { Date = new DateOnly(2025, 8, 9),  Name = "National Women's Day" },
+        new { Date = new DateOnly(2025, 9, 24), Name = "Heritage Day" },
+        new { Date = new DateOnly(2025, 12, 16), Name = "Day of Reconciliation" },
+        new { Date = new DateOnly(2025, 12, 25), Name = "Christmas Day" },
+        new { Date = new DateOnly(2025, 12, 26), Name = "Day of Goodwill" },
+        new { Date = new DateOnly(2026, 1, 1),  Name = "New Year's Day" },
+        new { Date = new DateOnly(2026, 3, 21), Name = "Human Rights Day" },
+        new { Date = new DateOnly(2026, 4, 3),  Name = "Good Friday" },
+        new { Date = new DateOnly(2026, 4, 6),  Name = "Family Day" },
+        new { Date = new DateOnly(2026, 4, 27), Name = "Freedom Day" },
+        new { Date = new DateOnly(2026, 5, 1),  Name = "Workers' Day" },
+        new { Date = new DateOnly(2026, 6, 16), Name = "Youth Day" },
+        new { Date = new DateOnly(2026, 8, 9),  Name = "National Women's Day" },
+        new { Date = new DateOnly(2026, 9, 24), Name = "Heritage Day" },
+        new { Date = new DateOnly(2026, 12, 16),Name = "Day of Reconciliation" },
+        new { Date = new DateOnly(2026, 12, 25),Name = "Christmas Day" },
+        new { Date = new DateOnly(2026, 12, 26),Name = "Day of Goodwill" }
+    };
+
+            var seedData = new List<BranchHoliday>();
+
+            foreach (var branchId in branchIds)
+            {
+                foreach (var holiday in holidays)
+                {
+                    seedData.Add(new BranchHoliday
+                    {
+                        Id = Guid.NewGuid(),
+                        BranchId = branchId,
+                        Date = holiday.Date,
+                        Description = holiday.Name
+                    });
+                }
+            }
+
+            modelBuilder.Entity<BranchHoliday>().HasData(seedData);
         }
     }
 }

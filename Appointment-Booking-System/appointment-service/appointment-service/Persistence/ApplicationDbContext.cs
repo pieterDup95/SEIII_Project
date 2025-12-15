@@ -14,8 +14,10 @@ namespace appointment_service.Persistence
 
         public DbSet<Branch> Branches { get; set; }
         public DbSet<OperationalHours> OperationalHours { get; set; }
+        public DbSet<BranchHoliday> BranchHolidays { get; set; }
         public DbSet<CustomerInfo> CustomerInfo { get; set; }
         public DbSet<AppointmentRequest> AppointmentRequest { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -41,6 +43,22 @@ namespace appointment_service.Persistence
             modelBuilder.Entity<OperationalHours>(entity =>
             {
                 entity.HasKey(o => o.Id);
+            });
+
+            // ----------------------------
+            // BranchHoliday Entity
+            // ----------------------------
+            modelBuilder.Entity<BranchHoliday>(entity =>
+            {
+                entity.HasKey(h => h.Id);
+
+                entity.HasOne(h => h.Branch)
+                      .WithMany(b => b.Holidays)
+                      .HasForeignKey(h => h.BranchId)
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                entity.Property(h => h.Date)
+                      .IsRequired();
             });
 
 

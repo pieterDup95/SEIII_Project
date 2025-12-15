@@ -19,6 +19,7 @@ public class BranchDetailRepository : IBranchDetailRepository
 
         var query = dbContext.Branches
                .Include(b => b.OperationalHours)
+               .Include(b => b.Holidays.Where(h => h.Date >= DateOnly.FromDateTime(DateTime.Now)))
                .AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(search))
@@ -42,13 +43,15 @@ public class BranchDetailRepository : IBranchDetailRepository
             City = b.City,
             Provice = b.Provice,
             Suburb = b.Suburb,
-            SlotPerHour = b.SlotPerHour,
+            AppointmentsPerSlot = b.AppointmentsPerSlot,
+            SlotDuration = b.SlotDuration,
             OperationalHours = b.OperationalHours.Select(oh => new OperationalHoursDto
             {
                 DayOfWeek = oh.DayOfWeek,
                 OpenTime = oh.OpenTime,
                 CloseTime = oh.CloseTime
-            }).ToList()
+            }).ToList(),
+            PublicHolidays = b.Holidays.Select(h => h.Date.ToString("yyyy-MM-dd")).ToList()
         }).ToList();
     }
 
@@ -58,6 +61,7 @@ public class BranchDetailRepository : IBranchDetailRepository
 
         return await dbContext.Branches
                 .Include(b => b.OperationalHours)
+               .Include(b => b.Holidays.Where(h => h.Date >= DateOnly.FromDateTime(DateTime.Now)))
                 .Where(b => b.Id.ToString() == branchId)
                 .Select(b => new BranchDto
                 {
@@ -68,7 +72,9 @@ public class BranchDetailRepository : IBranchDetailRepository
                     City = b.City,
                     Provice = b.Provice,
                     Suburb = b.Suburb,
-                    SlotPerHour = b.SlotPerHour,
+                    AppointmentsPerSlot = b.AppointmentsPerSlot,
+                    SlotDuration = b.SlotDuration,
+                    ContactNumber = b.ContactNumber,
                     OperationalHours = b.OperationalHours.Select(oh => new OperationalHoursDto
                     {
                         DayOfWeek = oh.DayOfWeek,

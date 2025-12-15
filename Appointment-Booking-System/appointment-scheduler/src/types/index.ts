@@ -14,7 +14,9 @@ export interface Branch {
   address: string;
   contactNumber: string;
   slotPerHour: number;
+  slotDuration: number;
   operationalHours: OperationalHour[];
+  publicHolidays: string[];
 }
 
 // Optional: if you want a nicer name without the typo in your components

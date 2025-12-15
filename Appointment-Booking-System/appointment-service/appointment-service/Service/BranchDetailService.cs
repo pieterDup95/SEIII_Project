@@ -55,19 +55,18 @@ public class BranchDetailService : IBranchDetailService
                 startTime = dayHours.OpenTime;
 
             var current = startTime;
-            var minutesPerSlot = 60.0 / branch.SlotPerHour;
 
             while (current < dayHours.CloseTime)
             {
                 var booked = bookedCounts.GetValueOrDefault(current, 0);
-                var isAvailable = booked < branch.SlotPerHour;
+                var isAvailable = booked < branch.AppointmentsPerSlot;
 
                 slots.Add(new TimeSlot(
                     Time: current.ToString(@"hh\:mm"),
                     IsAvailable: isAvailable
                 ));
 
-                current = current.Add(TimeSpan.FromMinutes(minutesPerSlot));
+                current = current.Add(TimeSpan.FromMinutes(branch.SlotDuration));
             }
 
             return new AvailabilityResponse

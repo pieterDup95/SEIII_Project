@@ -16,6 +16,9 @@ namespace appointment_service.Persistence.Entities
         public string Address { get; set; }
         public string ContactNumber { get; set; }
         public ICollection<OperationalHours> OperationalHours { get; set; }
-        public int SlotPerHour { get; set; }
+        public int AppointmentsPerSlot { get; set; }
+        public int SlotDuration { get; set; }
+        public ICollection<BranchHoliday> Holidays { get; set; } = new List<BranchHoliday>();
+
     }
 }

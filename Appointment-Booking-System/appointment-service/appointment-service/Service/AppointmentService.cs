@@ -41,8 +41,7 @@ namespace appointment_service.Service
                 throw new DuplicateBookingException(new
                 {
                     referenceNumber = existingAppointment.ReferenceNumber,
-                    branchName = "Your Branch",
-                    city = "Unknown",
+                    branchName = existingAppointment.BranchId,
                     date = existingAppointment.Date.ToString("yyyy-MM-dd"),
                     time = existingAppointment.Time.ToString(@"hh\:mm")
                 });

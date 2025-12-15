@@ -26,5 +26,10 @@ namespace appointment_service.Service
         {
             return await _managementRepository.CreateOperationalHoursAsync(dto, cancellationToken);
         }
+
+        public async Task<bool> AddBranchHolidayAsync(Guid branchId, BranchHolidayDto dto, CancellationToken cancellationToken)
+        {
+            return await _managementRepository.AddBranchHolidayAsync(branchId, dto, cancellationToken);
+        }
     }
 }

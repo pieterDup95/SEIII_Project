@@ -6,5 +6,6 @@ namespace appointment_service.Service.Interfaces
     {
         Task<BranchDto?> CreateBranchAsync(CreateBranchDto createDto, CancellationToken cancellationToken);
         Task<OperationalHoursDto?> CreateOperationalHoursAsync(CreateOperationalHoursDto dto, CancellationToken cancellationToken);
+        Task<bool> AddBranchHolidayAsync(Guid branchId, BranchHolidayDto dto, CancellationToken cancellationToken);
     }
 }

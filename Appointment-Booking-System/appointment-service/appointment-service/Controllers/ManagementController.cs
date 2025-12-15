@@ -64,5 +64,25 @@ namespace appointment_service.Controllers
                 return StatusCode(500, new { Message = "An unexpected error occurred." });
             }
         }
+
+        [HttpPost("branches/{branchId}/holidays")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> AddBranchHoliday(Guid branchId, [FromBody] BranchHolidayDto dto, CancellationToken cancellationToken)
+        {
+            try
+            {
+                var result = await _managementService.AddBranchHolidayAsync(branchId, dto, cancellationToken);
+                if (!result)
+                    return BadRequest(new { Message = "Branch not found or holiday could not be added." });
+
+                return StatusCode(StatusCodes.Status201Created);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error adding branch holiday");
+                return StatusCode(500, new { Message = "An unexpected error occurred." });
+            }
+        }
     }
 }
