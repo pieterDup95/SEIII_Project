@@ -15,7 +15,8 @@ This repository contains a full-stack Appointment Booking System, consisting of 
   - [Running with Docker Compose](#running-with-docker-compose)
   - [Manual Setup](#manual-setup)
 - [Project Structure](#project-structure)
-- [Development](#development)
+- [Development Setup](#development-setup)
+- [Production Setup](#production-setup)
 
 ---
 
@@ -129,3 +130,30 @@ Appointment-Booking-System/
 ├── docker-compose.yml             # Orchestrates db, migrate, api, and frontend services
 └── .env                           # Environment variables (gitignored)
 ```
+
+---
+
+### Development Setup
+```bash
+[Browser] <--HTTP--> [Vite Dev Server] <--API--> [ASP.NET Core Backend]
+       ^                 ^
+       |                 |
+   Hot reload          Serves React app dynamically
+```
+- Vite dev server runs React with hot reload.
+- API requests go directly to the backend.
+- Tailwind CSS styles are applied in real-time.
+
+
+### Production Setup
+```bash
+[Browser] <--HTTP/HTTPS--> [Nginx] <---> [ASP.NET Core Backend]
+       |
+       v
+  Serves static files
+(React build from Vite)
+```
+
+- Vite builds optimized static files in `/dist`.
+- Nginx serves static files and proxies API requests to the backend.
+- Vite is not running in production.
