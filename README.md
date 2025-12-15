@@ -64,7 +64,7 @@ POSTGRES_PASSWORD=your_secure_password
 POSTGRES_DB=appointment_db
 ```
 These variables are used by the PostgreSQL container and propagated to the migration/backend services.
-
+> **Note:** I have included a .env file in the repository to make it easier to run the application immediately after cloning. You won’t need to manually add values to the environment file. This is intended to allow the service to run smoothly without any additional setup.
 
 ### Running with Docker Compose
 Recommended for full-stack development and production-like setup.
