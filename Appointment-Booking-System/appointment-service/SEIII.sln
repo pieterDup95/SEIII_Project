@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appointment-service", "appointment-service\appointment-service.csproj", "{1F0297F5-47D6-4C9D-817A-056D318C7FFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appointment-service.Tests", "appointment-service.Tests\appointment-service.Tests.csproj", "{B8BA96B7-BD1D-BADE-8479-331543B8FD6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F0297F5-47D6-4C9D-817A-056D318C7FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0297F5-47D6-4C9D-817A-056D318C7FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0297F5-47D6-4C9D-817A-056D318C7FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BA96B7-BD1D-BADE-8479-331543B8FD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BA96B7-BD1D-BADE-8479-331543B8FD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BA96B7-BD1D-BADE-8479-331543B8FD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BA96B7-BD1D-BADE-8479-331543B8FD6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

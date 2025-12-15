@@ -1,5 +1,4 @@
-﻿// appointment_service/Service/EmailNotificationService.cs
-using appointment_service.Models;
+﻿using appointment_service.Models;
 using appointment_service.Service.Events;
 using appointment_service.Service.Interfaces;
 using Microsoft.Extensions.Options;

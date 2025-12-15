@@ -443,8 +443,8 @@ namespace appointment_service.Persistence.Seed
                             {
                                 Id = id,
                                 ReferenceNumber = "PB-" + Math.Abs(id.GetHashCode()) % 1_000_000,
-                                BranchId = branchId,
-                                Date = date,
+                                BranchId = branchId, 
+                                Date = DateOnly.FromDateTime(date), 
                                 Time = current,
                                 Active = true
                             };
@@ -461,7 +461,7 @@ namespace appointment_service.Persistence.Seed
                                     ? (random.Next(0, 3) switch
                                     {
                                         0 => "Open new account",
-                                        1 => "Lost ID book",
+                                        1 => "Lost bank card",
                                         _ => "Home loan inquiry"
                                     })
                                     : ""

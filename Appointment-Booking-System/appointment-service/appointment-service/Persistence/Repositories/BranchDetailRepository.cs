@@ -86,14 +86,12 @@ public class BranchDetailRepository : IBranchDetailRepository
     }
     public async Task<List<TimeSpan>> GetAvailabilityAsync(string branchId, DateTime date, CancellationToken cancellationToken)
     {
-        var selectedDate = date.Date;
+        var selectedDate = DateOnly.FromDateTime(date);
 
         return await dbContext.AppointmentRequest
-            .Where(a => a.BranchId.ToString() == branchId && a.Date.Date == selectedDate && a.Active == true)
+            .Where(a => a.BranchId.ToString() == branchId && a.Date == selectedDate && a.Active == true)
             .Select(a => a.Time)
             .ToListAsync(cancellationToken);
-
-
     }
 
 

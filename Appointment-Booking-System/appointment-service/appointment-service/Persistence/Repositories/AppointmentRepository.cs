@@ -26,7 +26,7 @@ namespace appointment_service.Persistence.Repositories
                 Id = id,
                 ReferenceNumber = shortRef,
                 BranchId = request.BranchId,
-                Date = request.Date,
+                Date = DateOnly.FromDateTime(request.Date),
                 Time = TimeSpan.Parse(request.Time),
                 Active = true,
                 Customer = new CustomerInfo
@@ -41,13 +41,12 @@ namespace appointment_service.Persistence.Repositories
 
             dbContext.AppointmentRequest.Add(entity);
             await dbContext.SaveChangesAsync(cancellationToken);
-
             return new AppointmentResponse
             {
                 appointmentId = entity.Id,
                 referenceNumber = entity.ReferenceNumber,
                 branchId = entity.BranchId,
-                date = entity.Date,
+                date = entity.Date.ToDateTime(TimeOnly.MinValue),
                 time = entity.Time,
                 status = "Confirmed",
                 message = "Your appointment has been successfully booked! A confirmation has been sent to your phone and email."
@@ -66,10 +65,13 @@ namespace appointment_service.Persistence.Repositories
 
         public async Task<AppointmentRequest> LookupAppointmentAsync(string idNumber, CancellationToken cancellationToken)
         {
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            var future = today.AddDays(30);
+
             return await dbContext.AppointmentRequest
                     .Where(a => a.Customer.IdNumber == idNumber &&
-                                a.Date >= DateTime.Today &&
-                                a.Date < DateTime.Today.AddDays(30) &&
+                                a.Date >= today &&
+                                a.Date < future &&
                                 a.Active == true)
                     .FirstOrDefaultAsync(cancellationToken);
         }
