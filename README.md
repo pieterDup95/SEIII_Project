@@ -87,12 +87,15 @@ Docker Compose will:
 - Start the frontend (frontend)
 
 4. Access the application:
-Frontend: http://localhost:5173
-Backend API: http://localhost:5000
-To stop: docker-compose down (add --volumes to remove persistent database data).
+   
+**Frontend:** http://localhost:5173
+
+**Backend API:** http://localhost:5000
+
+To stop: `docker-compose down` (add --volumes to remove persistent database data).
 
 ### Manual Setup
-## Frontend (appointment-scheduler)
+#### Frontend (appointment-scheduler)
 
 Install dependencies:
 ```bash
@@ -101,7 +104,7 @@ npm install
 ```
 Start the development server:`npm run dev`
 
-## Backend (appointment-service)
+#### Backend (appointment-service)
 
 Ensure PostgreSQL is running locally (or update the connection string in appsettings.json).
 Apply migrations manually (if needed):
@@ -113,6 +116,7 @@ Build and run: `dotnet run`
 
 
 ### Project Structure
+```bash
 Appointment-Booking-System/
 ├── appointment-scheduler/         # Frontend (React)
 │   ├── src/
@@ -124,4 +128,4 @@ Appointment-Booking-System/
 │   └── Dockerfile
 ├── docker-compose.yml             # Orchestrates db, migrate, api, and frontend services
 └── .env                           # Environment variables (gitignored)
-
+```
