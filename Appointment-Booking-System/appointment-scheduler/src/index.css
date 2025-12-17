@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling & modern font rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+/* Custom subtle grid background for dark hero sections */
+.bg-grid-white\/5 {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Fade-in animation */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional: Add Google Fonts (Inter + elegant display font) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
+
+/* Use Playfair Display for big headings if you want ultra-premium feel */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* src/index.css or globals.css */
+.custom-calendar .react-datepicker__month-container {
+  width: 100% !important;
+}
+.custom-calendar .react-datepicker__header {
+  background-color: #1e3a8a;
+  color: white;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.custom-calendar .react-datepicker__current-month,
+.custom-calendar .react-datepicker__day-name {
+  color: white;
+}
+.custom-calendar .react-datepicker__day--selected {
+  background-color: #fbbf24 !important;
+  color: #1e40af !important;
+  font-weight: bold;
+}
+.custom-calendar .react-datepicker__day--disabled {
+  color: #9ca3af !important;
+  text-decoration: line-through;
+}

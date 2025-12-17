@@ -1,0 +1,66 @@
+import type {
+  Branch,
+  BranchAvailability,
+  CreateAppointmentRequest,
+  AppointmentResponse,
+} from '../types';
+
+// Fake data
+const branches: Branch[] = [
+  {
+    branchId: 101,
+    name: "Cape Town Central",
+    address: "12 Long Street, Cape Town",
+    city: "Cape Town",
+    phone: "+27 21 555 0101",
+    services: ["Accounts", "Loans", "Investments"],
+  },
+  {
+    branchId: 102,
+    name: "Sandton City",
+    address: "Sandton Mall, Johannesburg",
+    city: "Johannesburg",
+    phone: "+27 11 555 2200",
+    services: ["Accounts", "Loans"],
+  },
+  {
+    branchId: 103,
+    name: "Durban Beachfront",
+    address: "Marine Parade, Durban",
+    city: "Durban",
+    phone: "+27 31 555 3300",
+    services: ["Accounts", "Investments"],
+  },
+];
+
+export const getBranches = async (search = ""): Promise<Branch[]> => {
+  await new Promise(r => setTimeout(r, 400));
+  if (!search) return branches;
+  const lower = search.toLowerCase();
+  return branches.filter(b =>
+    b.name.toLowerCase().includes(lower) ||
+    b.city.toLowerCase().includes(lower)
+  );
+};
+
+export const getAvailability = async (branchId: number, date: string): Promise<BranchAvailability> => {
+  await new Promise(r => setTimeout(r, 600));
+  const slots = ["09:00","09:30","10:00","10:30","11:00","11:30","14:00","14:30","15:00","15:30","16:00"];
+  return {
+    branchId,
+    date,
+    timeSlots: slots.map(t => ({ time: t, isAvailable: Math.random() > 0.35 })),
+  };
+};
+
+export const createAppointment = async (data: CreateAppointmentRequest): Promise<AppointmentResponse> => {
+  await new Promise(r => setTimeout(r, 900));
+  return {
+    appointmentId: `APT-${data.date.replace(/-/g, "").slice(2)}-${Math.floor(Math.random() * 999).toString().padStart(3, "0")}`,
+    branchId: data.branchId,
+    date: data.date,
+    time: data.time,
+    status: "Confirmed",
+    message: "Your appointment has been booked successfully.",
+  };
+};

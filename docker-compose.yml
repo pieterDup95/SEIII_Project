@@ -1,0 +1,63 @@
+services:
+  db:
+    image: postgres:16
+    container_name: appointment-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      
+  migrate:
+    build:
+      context: ./Appointment-Booking-System/appointment-service
+      dockerfile: Dockerfile
+    container_name: appointment-migrate
+    command: ["dotnet", "appointment-service.dll", "-m"]
+    environment:
+      Database__ConnectionString: "Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
+    volumes:
+        - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
+ 
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api:
+    build:
+      context: ./Appointment-Booking-System/appointment-service
+      dockerfile: Dockerfile
+    container_name: appointment-api
+    environment:
+      Database__ConnectionString: "Host=db;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
+    volumes:
+        - ./Appointment-Booking-System/appointment-service/appointment-service/appsettings.json:/app/appsettings.json:ro
+    depends_on:
+      - db
+      - migrate
+    ports:
+      - "5000:8080" 
+
+  frontend:
+    build:
+      context: ./Appointment-Booking-System/appointment-scheduler
+      dockerfile: Dockerfile
+    container_name: appointment-frontend
+    environment:
+      - VITE_API_BASE=/api
+      - VITE_TOKEN_ENDPOINT=/api/auth/frontend-token
+    ports:
+      - "5173:80" 
+    depends_on:
+      - api
+
+volumes:
+  db-data:
