@@ -1,5 +1,6 @@
 using appointment_service.Configuration;
 using appointment_service.Persistence;
+using appointment_service.Service.Models;
 using appointment_service.Swagger;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -39,11 +40,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 
+var frontendSettings = builder.Configuration.GetSection("Frontend").Get<FrontendSettings>()
+    ?? throw new InvalidOperationException("Frontend:BaseUrl is missing in configuration");
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVite", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") 
+        policy.WithOrigins(frontendSettings.BaseUrl) 
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
