@@ -1,5 +1,4 @@
-﻿// Services/SqsNotificationService.cs
-using Amazon.SQS;
+﻿using Amazon.SQS;
 using Amazon.SQS.Model;
 using appointment_service.Service.Events;
 using appointment_service.Service.Interfaces;

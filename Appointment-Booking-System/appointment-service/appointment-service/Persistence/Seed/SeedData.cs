@@ -1,5 +1,4 @@
-﻿// Persistence/Seed/SeedData.cs
-using appointment_service.Persistence.Entities;
+﻿using appointment_service.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace appointment_service.Persistence.Seed
