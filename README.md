@@ -15,6 +15,7 @@ This repository contains a full-stack Appointment Booking System, consisting of 
   - [Environment Variables](#environment-variables)
   - [Running the Application (Recommended)](#running-the-application-recommended)
   - [Manual Local Development (Optional)](#manual-local-development-optional)
+  - [Database Access](#database-access)
 - [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Development Setup](#development-setup)
@@ -198,6 +199,26 @@ The frontend will be available at http://localhost:5173 with hot reload enabled.
     dotnet run
     ```
 
+## Database Access
+If you want to connect directly to the PostgreSQL database.
+
+The database runs inside a Docker container (`appointment-db`).
+
+**Connection Details**:
+- **Host**: `localhost`
+- **Port**: `5432` (mapped from container)
+- **Database**: `appointments_prod` (or the value from your `.env` file)
+- **Username**: `appt_user` (or the value from your `.env` file)
+- **Password**: `S3cureP@ss!6576as` (or the value from your `.env` file)
+
+**Example Connection String**:
+`Host=localhost;Port=5432;Database=appointment_db;Username=postgres;Password=postgres`
+
+You can connect using tools such as:
+- **pgAdmin** – Create a new server with the details above
+- **DBeaver** – Same connection details
+
+  
 ---
 ## Testing
 ### Frontend Tests
