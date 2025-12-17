@@ -1,4 +1,5 @@
 ﻿using appointment_service.Controllers.Models;
+using appointment_service.Service.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -17,11 +18,13 @@ namespace appointment_service.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly List<ClientCredentials> _clients;
+        private readonly FrontendSettings _frontendSettings;
 
-        public AuthController(IConfiguration configuration, IOptionsSnapshot<List<ClientCredentials>> clients)
+        public AuthController(IConfiguration configuration, IOptionsSnapshot<List<ClientCredentials>> clients, FrontendSettings frontendSettings)
         {
             _configuration = configuration;
             _clients = clients.Value;
+            _frontendSettings = frontendSettings;
         }
 
         [HttpPost("frontend-token")]
@@ -29,7 +32,7 @@ namespace appointment_service.Controllers
         public IActionResult GetFrontendToken()
         {
             var origin = Request.Headers.Origin.FirstOrDefault();
-            var allowedOrigins = new[] {"http://localhost:5173"};
+            var allowedOrigins = new[] { _frontendSettings.BaseUrl };
 
             if (origin == null || !allowedOrigins.Contains(origin))
             {
@@ -49,7 +52,7 @@ namespace appointment_service.Controllers
         [AllowAnonymous]
         [HttpPost("token")]
         public IActionResult Token([FromForm] TokenRequest request)
-        {  
+        {
             var client = _clients.FirstOrDefault(c =>
                 c.ClientId == request.ClientId &&
                 c.ClientSecret == request.ClientSecret);
@@ -75,7 +78,7 @@ namespace appointment_service.Controllers
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, client.ClientId),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), 
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             };
 
             foreach (var role in client.Roles)
