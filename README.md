@@ -9,6 +9,7 @@ This repository contains a full-stack Appointment Booking System, consisting of 
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Features](#features)
+- [Project Description](#project-description)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Environment Variables](#environment-variables)
@@ -50,6 +51,75 @@ The Docker Compose setup includes:
 - Database persistence via PostgreSQL
 - Automated schema migrations and initial data seeding
 
+
+---
+
+## Project Description
+
+This Appointment Booking System is a full-stack application designed to simulate a realistic, production-like booking experience for a multi-branch organization.
+
+### Security & API Access
+
+- **Public APIs** (used by the frontend): Protected endpoints that allow booking, viewing available slots, and checking existing appointments. These are accessible only from the frontend via a secure frontend-specific token mechanism.
+- **Management APIs**: A dedicated `ManagementController` provides administrative functionality restricted to a separate "management" client. These endpoints allow:
+  - Adding and managing branches
+  - Defining operational hours per branch
+  - Configuring public holidays (which affect availability across branches)
+
+These management endpoints are intentionally separated to reflect real-world role-based access patterns.
+
+### Database & Startup Flow
+
+The backend connects to a **PostgreSQL** database for persistent storage.
+
+When you run `docker-compose up --build`:
+1. The `db` service starts PostgreSQL with a health check.
+2. The `migrate` service waits for the database to be healthy, then:
+   - Applies all Entity Framework Core migrations to create/update the schema
+   - Seeds the database with realistic dummy data (branches, operational hours, holidays, etc.)
+3. Only after successful migration does the `api` (backend) service start.
+4. Finally, the `frontend` service starts.
+
+This dependency chain ensures the database is fully initialized and populated before the application becomes available — providing an immediate, testable experience with realistic data.
+
+### Frontend Experience
+
+The frontend is more than just a booking form — it includes a small informational website (home page, about, services) to create a fuller, more realistic user journey.
+
+**Booking Flow**:
+1. **Select a branch** – Search and choose from available branches.
+2. **Choose a date** – A calendar view shows:
+   - Dates when the branch is closed (e.g., holidays or non-operational days) are greyed out and crossed through.
+3. **Select a time slot** – Available slots appear based on branch operational hours.
+Each branch has a configurable capacity called AppointmentsPerSlot in the Branch table.
+This is a very important feature that lets bigger branches handle more customers at the same time:
+
+   - If AppointmentsPerSlot = 1 → the slot becomes unavailable (greyed out) immediately after one person books it
+   - If AppointmentsPerSlot = 5 → the slot stays open and bookable until 5 different people have booked it – then it turns grey and cannot be selected anymore
+     
+    This makes the system realistic for both small branches (one customer at a time) and large branches with more staff/resources (multiple appointments in the same slot).
+
+4. **Enter personal details**:
+   - Name, South African ID number (validated to exactly 13 digits), phone number, and email are required.
+   - The ID number is used to enforce a **one active appointment per person** rule.
+     - If a user with the same ID already has a booking, a clear popup informs them they must cancel the existing one first.
+5. **Confirmation**:
+   - On successful booking, a popup displays a reference number and confirmation message.
+   - The system is designed to trigger SMS and email notifications.
+
+**Note on Notifications**:
+- The backend queues confirmation messages to **AWS SQS**, which would normally trigger a Lambda to forward them via **AWS SNS** for SMS/email delivery.
+- Additionally, direct integration with **SendGrid** (via NuGet package) is implemented as an alternative email-sending mechanism.
+- However, since this uses a personal AWS free-tier account and a free SendGrid account, actual SMS and emails are **not sent** — recipient phone numbers and emails must be pre-verified, which isn't feasible in a demo.
+- These services are fully wired in the code to demonstrate how real-world notification delivery would be implemented using organizational infrastructure.
+
+**Error Handling**:
+- The frontend gracefully handles API failures with user-friendly error messages and popups, ensuring a robust user experience even when something goes wrong.
+
+This design reflects production-grade considerations: separation of concerns, realistic data flow, capacity management, validation, security, and observability through queued notifications.
+
+
+---
 ## Getting Started
 
 ### Prerequisites
@@ -128,6 +198,7 @@ The frontend will be available at http://localhost:5173 with hot reload enabled.
     dotnet run
     ```
 
+---
 ## Testing
 ### Frontend Tests
 
@@ -146,6 +217,8 @@ npm run test
 cd Appointment-Booking-System/appointment-service/appointment-service.Tests
 dotnet test
 ```
+
+---
 
 ## Project Structure
 ```bash
